@@ -69,4 +69,6 @@ function twoSum(nums: number[], target: number): number[] {
 // Second: First solution first (it is related to the first error), as soon as I find the target when summing numbers, I should have had returned it. 
 // My thoughts were: ok, I found the first solution, but I need to return the least two indexes that are closest to the target, not the first right away
 
+// Third: One more perception error, I also didn't realize that nums array could be negative, pay close attention to the parameters scope next time Xd
+
 // Anyway, the errors committed just helped me to learn how leetcodes are tricky, I'll come next time with the optmized solution
