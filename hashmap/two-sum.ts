@@ -60,15 +60,16 @@ function twoSum(nums: number[], target: number): number[] {
 };
 
 // Comments
-// The solution above has time complexity of O(n^2), even though having only while loop, it iterates through the array left n times.
-// I thought I needed to iterate each element to find the two closest indexes or equal to the target.
-// But I was totally mitaken, I didn't read carefully the description.
+// The solution above has time complexity of O(n^2), even though having only while loop, 
+// it iterates through the array using left variable n times (I thought I was cracking it with O(n) time complexity, like a badass dev XD)
+// I had in mind that I needed to iterate each element to find the two closest indexes or equal to the target.
+// But I was totally mistaken, I didn't read carefully the description.
 
 // First error: I didn't notice that the target would always be equal to the sum of two numbers among the array
 
 // Second: First solution first (it is related to the first error), as soon as I find the target when summing numbers, I should have had returned it. 
 // My thoughts were: ok, I found the first solution, but I need to return the least two indexes that are closest to the target, not the first right away
 
-// Third: One more perception error, I also didn't realize that nums array could be negative, pay close attention to the parameters scope next time Xd
+// Third: One more perception error, I also didn't realize that nums array could be negative, pay close attention to the variable parameters scope next time Xd
 
 // Anyway, the errors committed just helped me to learn how leetcodes are tricky, I'll come next time with the optmized solution
