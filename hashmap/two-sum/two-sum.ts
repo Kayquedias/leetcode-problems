@@ -92,3 +92,7 @@ function twoSumOptimized(nums: number[], target: number): number[] {
 
     return [];
 };
+
+
+// Real world use case applications for this alogorithm in two-sum-real-world-use-cases.md file
+
