@@ -73,3 +73,22 @@ function twoSum(nums: number[], target: number): number[] {
 // Third: One more perception error, I also didn't realize that nums array could be negative, pay close attention to the variable parameters scope next time Xd
 
 // Anyway, the errors committed just helped me to learn how leetcodes are tricky, I'll come next time with the optmized solution
+
+
+// *******
+// OPTIMIZED SOLUTION
+// *******
+
+function twoSumOptimized(nums: number[], target: number): number[] {
+    const map = new Map<number, number>();
+    for (let i = 0; i < nums.length;i++) {
+        const complement = target - nums[i];
+        if (map.has(complement)) {
+            return [map.get(complement)!, i]
+        }
+
+        map.set(nums[i], i)
+    }
+
+    return [];
+};
