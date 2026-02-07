@@ -57,7 +57,6 @@ function detectCapitalUse(word: string): boolean {
 };
 
 // Intuition
-// Describe your first thoughts on how to solve this problem.
 // At first, I thought some altready optmized way to solve this problem, but I got nowhere.
 // Then, I went with the brute force approach, iterating the entire word to check for the first letter capital case.
 
